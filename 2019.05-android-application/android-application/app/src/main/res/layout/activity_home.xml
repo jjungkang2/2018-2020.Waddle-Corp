@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff383838"
+    tools:context=".HomeMenu">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/background1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button00"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:text="네이버 뉴스"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp" />
+
+                        <Button
+                            android:id="@+id/button01"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button02"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button03"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button04"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button05"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button06"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button07"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button08"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                        <Button
+                            android:id="@+id/button09"
+                            android:layout_width="83dp"
+                            android:layout_height="83dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="12dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/select"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:onClick="onClick"
+                            android:padding="10dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="20sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nanum_square_extra_bold"
+                    android:text="즐겨찾기"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#9d9d9d"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/background2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/naver_news"
+                            android:contentDescription="네이버 뉴스"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:padding="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/button11"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:background="@drawable/naver_shopping"
+                            android:contentDescription="네이버 쇼핑"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:padding="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/button12"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/naver_sports"
+                            android:contentDescription="네이버 스포츠"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:padding="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                        <Button
+                            android:id="@+id/button13"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/naver_entertainment"
+                            android:contentDescription="네이버 연예"
+                            android:gravity="center"
+                            android:onClick="onClick"
+                            android:padding="3dp"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/nanum_square_extra_bold"
+                    android:text="네이버"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#9d9d9d"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff444444"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/canclebox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginBottom="12dp"
+            android:background="#ff444444"
+            android:fontFamily="@font/nanum_square_bold"
+            android:text="취소"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/searchbox"
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/search_notclicked"
+            android:ems="10"
+            android:fontFamily="@font/nanum_square_bold"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:hint="검색어 또는 웹사이트 이름 입력"
+            android:inputType="textPersonName"
+            android:onClick="onClick"
+            android:textColor="#ffffffff"
+            android:textColorHint="#ffffffff"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/canclebox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

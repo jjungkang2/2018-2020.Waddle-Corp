@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script language="javascript">
+		var script = document.createElement('script');
+		script.src = 'jquery-3.4.1.min.js';
+		script.type = 'text/javascript';
+		document.getElementsByTagName('head')[0].appendChild(script);
+
+		function getAddr() {
+			search ="currentPage=1&"
+				+"countPerPage=10&"
+				+"resultType=json&"
+				+"confmKey=devU01TX0FVVEgyMDE5MTEwODA5NDY0OTEwOTE3NzA%3D&"
+				+"keyword=\"궁동\""
+				
+			$.ajax({
+				url: "http://www.juso.go.kr/addrlink/addrLinkApiJsonp.do",
+				type: "post",
+				data: search,
+				dataType: "jsonp",
+				crossDomain: true,
+				success: function (jsonStr) {
+					$("#list").html("");
+					var errCode = jsonStr.results.common.errorCode;
+					var errDesc = jsonStr.results.common.errorMessage;
+					if (errCode != "0") {
+						alert(errCode + "=" + errDesc);
+					} else {
+						if (jsonStr != null) {
+							console.log(jsonStr.results.juso)
+						}
+					}
+				},
+				error: function (xhr, status, error) {
+					alert("에러");
+				}
+			});
+		}
+	</script>
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<form name="form" id="form" method="post">
+		<input type="button" onClick="getAddr();" value="주소검색하기" />
+		<div id="list"></div><!-- 검색 결과 리스트 출력 영역 -->
+	</form>
+</body>
+
+</html>

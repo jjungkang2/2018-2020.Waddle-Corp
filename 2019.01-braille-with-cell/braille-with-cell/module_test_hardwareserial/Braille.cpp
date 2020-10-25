@@ -1,0 +1,40 @@
+#include "Braille.h"
+
+
+extern unsigned char allup[26] = {0xAA, 0x55, 0x00, 0x16, 0x00, 0x02, 0x00, 0x00, 0x00,
+                                  0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 
+                                  0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x3F, 0x00};
+extern unsigned char alldw[26] = {0xAA, 0x55, 0x00, 0x16, 0x00, 0x02, 0x00, 0x00, 0x00,
+                                  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
+                                  0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+                          
+
+Word::Word(){}
+
+void Word::Init(){
+  for (int i=0; i<26; i++){
+    dot[i] = alldw[i];
+  }
+}
+
+void Word::Convert(unsigned char *update){
+  int bef = (int) (unsigned char *) *update;
+  int aft =0;
+
+  for (int i=0; i<6; i++){
+    aft += bef%2;
+    bef >>= 1;
+    aft <<= 1;
+  }
+
+  aft >>= 1;
+  *update = (unsigned char) aft;
+}
+
+void Word::Update(unsigned char *update){
+  
+	for (int i=0; i<16; i++){
+    Word::Convert(update+i);
+		dot[i+9] = update[i];
+	}
+}
