@@ -122,8 +122,8 @@ def send_push(message, token):
     print('send_push')
     try:
         
-        arn = 'arn:aws:sns:ap-northeast-2:115937545464:endpoint/APNS_SANDBOX/Waddleshopping/15ca02ed-f092-34e7-a968-51194f9d086c'
-        sns = boto3.client('sns', region_name='ap-northeast-2', aws_access_key_id='AKIARV7TKRT4GOQN7KZ4', aws_secret_access_key='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')
+        arn = ''
+        sns = boto3.client('sns', region_name='ap-northeast-2', aws_access_key_id='', aws_secret_access_key='')
         endpoint = execute(f"""SELECT EndPoint FROM User WHERE Token='{token}';""", True)[0][0]
 
         apns_dict = {'aps':{'alert':'inner message','sound':'mySound.caf'}}
@@ -149,11 +149,11 @@ def watch():
         review_date = review_date.strftime("%m/%d")
 
         if time_now>=1 and time_now<=13:
-            db = pymysql.connect(host='waddle-shopping-db.cn3btnlhdzhq.ap-northeast-2.rds.amazonaws.com',
+            db = pymysql.connect(host='',
                 port=3306,
                 user='admin',
-                passwd='Waddlecorp#',
-                db='User2',
+                passwd='',
+                db='',
                 charset='utf8') 
                  
             if time_now == 5: #3시
@@ -179,7 +179,7 @@ def watch():
             for orderId in update_list:
                 if orderId.isdigit():
                     print(orderId+', '+str(update_list.index(orderId))+'/'+str(len(update_list)))
-                    product_crawl('jihyuk0525@naver.com', orderId)
+                    product_crawl('', orderId)
                     
             db.close()
 
@@ -190,11 +190,11 @@ def watch():
 
 if __name__ == '__main__':
 
-    db = pymysql.connect(host='waddle-shopping-db.cn3btnlhdzhq.ap-northeast-2.rds.amazonaws.com',
+    db = pymysql.connect(host='',
                     port=3306,
                     user='admin',
-                    passwd='Waddlecorp#',
-                    db='User2',
+                    passwd='',
+                    db='',
                     charset='utf8')       
 
     t = threading.Thread(target=watch)
